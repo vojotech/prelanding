@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url("kd_components");
+
+/* Loading */
+
+
+@font-face
+{
+font-family: NeoSans;
+src: url('NeoSans.otf');
+}
+
+
+body {
+    background-color: #fafafa;
+
+}
+
+.main {
+
+    position: absolute;
+    top: 0;
+
+    width: 1040px;
+    left: 50%;
+    margin-left: -520px;
+    height: 1740px;
+
+}
+
+.shadowBarLeft {
+    
+    width: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    
+    background-image: url('../image/shadowLeft.png');
+}
+
+.shadowBarRight {
+    
+    width: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../image/shadowRight.png');
+}
+
+.mainMiddle {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+
+}
+
+.logo {
+    position: absolute;
+    left: 35px;
+    top: 11px;
+    width: 130px;
+    height: 48px;
+    background-image: url('../image/logo.png');
+    cursor: pointer;
+    
+    opacity: 0.5;
+    -webkit-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -o-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.nav {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    
+}
+
+.navCell {
+    display: inline-block;
+    font-family: NeoSans, Arial;
+    font-size: 13px;
+    font-weight: 500;
+    width: 80px;
+    aborder: 1px solid red;
+    text-align: center;
+    color: #999;   
+    cursor: pointer;
+    -webkit-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -o-transition: all 0.218s;
+  transition: all 0.218s;
+}
+
+.navCell:hover {
+    color: #000;
+}
+
+#navCell3 {
+    color: #000;
+}
+
+
+
+/*main Window*/
+.mainWindow {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 1376px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.singleWindow {
+    position: absolute;
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#mainMagnet {
+    width: 100%;
+    height: 376px;
+    background-image: url('../image/basic3b.png');
+    
+}
+
+
+#mainMagnet .floatingBox {
+    position: absolute;
+    left: 250px;
+    top: 230px;
+    font-family: NeoSans;
+}
+
+#mainInfinite .floatingBox {
+    position: absolute;
+    left: 450px;
+    top: 340px;
+    font-family: NeoSans;
+}
+
+#mainBasic .floatingBox {
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    font-family: NeoSans;
+}
+
+.floatingBoxTitle {
+    font-size: 30px;
+    color: #666;
+    font-weight: 400;
+    padding: 8px;
+}
+
+.floatingBoxText {
+    font-size: 18px;
+    color: #888;
+    padding: 8px;
+}
+
+.floatingButton {
+    padding: 8px;
+}
+
+.floatingBoxButton {
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+/* Intro Box */
+
+.introCell {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    
+}
+
+#introCell1 {
+    top: 376px;
+    background-image: url('../image/basic/basic1.png');
+}
+
+#introCell2 {
+    top: 676px;
+    background-image: url('../image/basic/basic2.png');
+}
+
+#introCell3 {
+    top: 976px;
+    background-image: url('../image/basic/basic3.png');
+}
+
+#introCell4 {
+    top: 1276px;
+    background-image: url('../image/basic/basic4.png');
+}
+
+
+
+.introBoxTitle {
+    font-size: 30px;
+    color: #666;
+    font-weight: 400;
+    padding: 8px;
+    font-family: NeoSans;
+    font-weight: lighter;
+}
+
+.introBoxText {
+    font-size: 14px;
+    color: #222;
+    padding: 0 8px;
+    font-family: NeoSans;
+    font-weight: lighter;
+    line-height: 18px;
+}
+
+#introCell1 .introBoxTitle {
+    color: #ff0090;
+}
+#introCell2 .introBoxTitle {
+    color: #1ec3f3;
+}
+#introCell3 .introBoxTitle {
+    color: #6ec30f;
+}
+
+#introCell4 .introBoxTitle {
+    color: #888;
+}
+
+#introBox1 {
+    position: absolute;
+    left: 428px;
+    top: 73px;
+}
+
+#introBox2 {
+    position: absolute;
+    left: 433px;
+    top: 83px;
+}
+
+#introBox3 {
+    position: absolute;
+    left: 233px;
+    top: 63px;
+}
+
+#introBox4 {
+    position: absolute;
+    left: 433px;
+    top: 30px;
+}
+
+
+/* Bottom */
+
+.bottomShadow {
+    position: absolute;
+    top: 1643px;
+    width: 100%;
+    height: 17px;
+    opacity: 0.4;
+    background-image: url('../image/shadowBanner.png');
+}
+
+.bottomLogo {
+    position: absolute;
+    top: 1663px;
+    width: 57px;
+    height: 66px;
+    left: 50%;
+    margin-left: -29px;
+    opacity: 0.9;
+    background-image: url('../image/bottomLogo.png');
+    cursor: pointer;
+}
+
+/* Button 1*/
+
+.buyButton {
+        position: relative;
+        top: -2px;
+	color: #fff;
+	cursor: pointer;
+	height: 12px;
+	padding-top: 5px;
+        width: 70px;
+        height: 15px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	margin: 0;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	font-size: 11px;
+
+	
+  -webkit-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -o-transition: all 0.218s;
+  transition: all 0.218s;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#ec52ac),to(#cf2d6b));
+  background-image: -webkit-linear-gradient(top,#ec52ac,#cf2d6b);
+  background-image: -moz-linear-gradient(top,#ec52ac,#cf2d6b);
+  background-image: -ms-linear-gradient(top,#ec52ac,#cf2d6b);
+  background-image: -o-linear-gradient(top,#ec52ac,#cf2d6b);
+  background-image: linear-gradient(top,#ec52ac,#cf2d6b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ec52ac',EndColorStr='#cf2d6b');
+  -webkit-user-select:none;
+  -moz-user-select:none;
+}
+
+.buyButton:hover {
+	
+  color: #fff;
+  -webkit-transition: all 0.0s;
+  -moz-transition: all 0.0s;
+  -o-transition: all 0.0s;
+  transition: all 0.0s;
+  background-color: #f8f8f8;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#f15eb3),to(#cf2d6b));
+  background-image: -webkit-linear-gradient(top,#f15eb3,#cf2d6b);
+  background-image: -moz-linear-gradient(top,#f15eb3,#cf2d6b);
+  background-image: -ms-linear-gradient(top,#f15eb3,#cf2d6b);
+  background-image: -o-linear-gradient(top,#f15eb3,#cf2d6b);
+  background-image: linear-gradient(top,#f15eb3,#cf2d6b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f15eb3',EndColorStr='#cf2d6b');
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+.buyButton:active,
+.buyButton.active {
+	background-color: #EEEEEE;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#cf2d6b),to(#ec52ac));
+	background-image: -webkit-linear-gradient(top,#cf2d6b,#ec52ac);
+	background-image: -moz-linear-gradient(top,#cf2d6b,#ec52ac);
+	background-image: -ms-linear-gradient(top,#cf2d6b,#ec52ac);
+	background-image: -o-linear-gradient(top,#cf2d6b,#ec52ac);
+	background-image: linear-gradient(top,#cf2d6b,#ec52ac);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cf2d6b',EndColorStr='#ec52ac');
+	-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+
+	color: #fff;
+}
+
+
+/* Button 2*/
+
+.buyButton2 {
+
+	color: #fff;
+	cursor: pointer;
+	height: 12px;
+	padding: 10px 0;
+        width: 103px;
+        height: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	margin: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+
+	
+  -webkit-transition: all 0.218s;
+  -moz-transition: all 0.218s;
+  -o-transition: all 0.218s;
+  transition: all 0.218s;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#60a9ea),to(#387ad6));
+  background-image: -webkit-linear-gradient(top,#60a9ea,#387ad6);
+  background-image: -moz-linear-gradient(top,#60a9ea,#387ad6);
+  background-image: -ms-linear-gradient(top,#60a9ea,#387ad6);
+  background-image: -o-linear-gradient(top,#60a9ea,#387ad6);
+  background-image: linear-gradient(top,#60a9ea,#387ad6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#60a9ea',EndColorStr='#387ad6');
+  -webkit-user-select:none;
+  -moz-user-select:none;
+}
+
+.buyButton2:hover {
+	
+  color: #fff;
+  -webkit-transition: all 0.0s;
+  -moz-transition: all 0.0s;
+  -o-transition: all 0.0s;
+  transition: all 0.0s;
+  background-color: #f8f8f8;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#7abffd),to(#5496f2));
+  background-image: -webkit-linear-gradient(top,#7abffd,#5496f2);
+  background-image: -moz-linear-gradient(top,#7abffd,#5496f2);
+  background-image: -ms-linear-gradient(top,#7abffd,#5496f2);
+  background-image: -o-linear-gradient(top,#7abffd,#5496f2);
+  background-image: linear-gradient(top,#7abffd,#5496f2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7abffd',EndColorStr='#5496f2');
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+
+.buyButton2:active,
+.buyButton2.active {
+	background-color: #EEEEEE;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#387ad6),to(#60a9ea));
+	background-image: -webkit-linear-gradient(top,#387ad6,#60a9ea);
+	background-image: -moz-linear-gradient(top,#387ad6,#60a9ea);
+	background-image: -ms-linear-gradient(top,#387ad6,#60a9ea);
+	background-image: -o-linear-gradient(top,#387ad6,#60a9ea);
+	background-image: linear-gradient(top,#387ad6,#60a9ea);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#387ad6',EndColorStr='#60a9ea');
+	-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+
+	color: #fff;
+}

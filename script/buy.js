@@ -15,11 +15,11 @@ $(document).ready(function() {
     var basicStatus=1;
     
     var magnetURL=new Array(
-    "http://www.amazon.com/gp/product/B006JMUDQO",
+    "http://www.amazon.com/gp/product/B007OU0A90",
     "http://www.amazon.com/gp/product/B009CN1DBG",
     "http://www.amazon.com/gp/product/B009CMMO4C",
     "http://www.amazon.com/gp/product/B009CNCYWS",
-    "http://www.amazon.com/gp/product/B009CN4OGM",
+    "http://www.amazon.com/gp/product/B00B0CPWQY",
     "http://www.amazon.com/gp/product/B009CYQI5Q",
     "http://www.amazon.com/gp/product/B009CYOB0A",
     "http://www.amazon.com/gp/product/B009CYVKTA",
@@ -118,12 +118,14 @@ $(document).ready(function() {
     
     function magnetChange(){
         if(magnetType==0) {
-            $("#introCell1 .introBoxPrice").text("$8.99");
+            $("#introCell1 .introBoxPrice").text("$12.99");
+            $("#introCell1 .introBoxPrice2").text("$9.99");
             $("#introCell1 .typeImg1").addClass("borderBlue");
             $("#introCell1 .typeImg2").removeClass("borderBlue");
         }
         if(magnetType==1) {
-            $("#introCell1 .introBoxPrice").text("$9.99");
+            $("#introCell1 .introBoxPrice").text("$14.99");
+            $("#introCell1 .introBoxPrice2").text("$10.99");
             $("#introCell1 .typeImg2").addClass("borderBlue");
             $("#introCell1 .typeImg1").removeClass("borderBlue");
         }
@@ -162,12 +164,14 @@ $(document).ready(function() {
     //basic
     function basicChange(){
         if(basicType==0) {
-            $("#introCell2 .introBoxPrice").text("$5.99");
+            $("#introCell2 .introBoxPrice").text("$8.99");
+            $("#introCell2 .introBoxPrice2").text("$6.99");
             $("#introCell2 .typeImg1").addClass("borderBlue");
             $("#introCell2 .typeImg2").removeClass("borderBlue");
         }
         if(basicType==1) {
-            $("#introCell2 .introBoxPrice").text("$6.99");
+            $("#introCell2 .introBoxPrice").text("$9.99");
+            $("#introCell2 .introBoxPrice2").text("$7.99");
             $("#introCell2 .typeImg2").addClass("borderBlue");
             $("#introCell2 .typeImg1").removeClass("borderBlue");
         }
@@ -237,6 +241,11 @@ $(document).ready(function() {
       basicStatus=basicType*5+basicColor;
       
       window.open(basicURL[basicStatus-1],"blank");
+    })
+    
+    $("#introBoxCellInfiniteBuy .buyButton2").click(function() {
+      
+      window.open("https://www.kickstarter.com/projects/668098663/infiniteusb-one-usb-port-unlimited-devices","blank");
     })
     
     //no use

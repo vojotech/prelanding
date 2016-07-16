@@ -7,8 +7,16 @@
 
 @font-face
 {
-font-family: NeoSans;
-src: url('NeoSans.otf');
+    font-family: "NeoSans";
+    src: url('../font/NeoSans.otf')  format("opentype");
+    font-weight: 400;
+}
+
+@font-face
+{
+    font-family: "NeoSans";
+    src: url('../font/NeoSans-Light.otf')  format("opentype");
+    font-weight: 200;
 }
 
 
@@ -94,9 +102,9 @@ body {
 
 .navCell {
     display: inline-block;
-    font-family: NeoSans, Arial;
+    font-family: "NeoSans",Helvetica,Arial,sans-serif;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 400;
     width: 80px;
     aborder: 1px solid red;
     text-align: center;
@@ -149,21 +157,21 @@ body {
     position: absolute;
     left: 250px;
     top: 230px;
-    font-family: NeoSans;
+    font-family: "NeoSans",Helvetica,Arial,sans-serif;
 }
 
 #mainInfinite .floatingBox {
     position: absolute;
     left: 450px;
     top: 340px;
-    font-family: NeoSans;
+    font-family: "NeoSans",Helvetica,Arial,sans-serif;
 }
 
 #mainBasic .floatingBox {
     position: absolute;
     left: 250px;
     top: 300px;
-    font-family: NeoSans;
+    font-family: "NeoSans",Helvetica,Arial,sans-serif;
 }
 
 .floatingBoxTitle {
@@ -224,16 +232,16 @@ body {
     color: #666;
     font-weight: 400;
     padding: 8px;
-    font-family: NeoSans;
-    font-weight: lighter;
+    font-family: "NeoSans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
 }
 
 .introBoxText {
     font-size: 14px;
     color: #222;
     padding: 0 8px;
-    font-family: NeoSans;
-    font-weight: lighter;
+    font-family: "NeoSans",Helvetica,Arial,sans-serif;
+    font-weight: 200;
     line-height: 18px;
 }
 
@@ -388,7 +396,7 @@ body {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	font-size: 15px;
-        font-weight: 500;
+        font-weight: 400;
         text-align: center;
 
 	
